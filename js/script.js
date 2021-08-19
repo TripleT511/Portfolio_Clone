@@ -97,12 +97,17 @@ $(document).ready(function () {
     });
     /* filter image */
     $(".list__filter").on("click", function () {
+        const value = $(this).attr("data-filter");
+        if (value == "All") {
+            $(".portfolio__item").show("1000");
+        } else {
+            $(".portfolio__item").not("." + value).hide("1000");
+            $(".portfolio__item").filter("." + value).show("1000");
+        }
         $(".list__filter").removeClass("active");
         $(this).addClass("active");
     })
-    var filter = $(".filtr-container").filterizr({
 
-    });
 })
 
 /* carousel */

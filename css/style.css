@@ -444,7 +444,7 @@ html {
     padding: 18px 15px;
     cursor: pointer;
 }
-.portfolio__list ul .list__filter + .list__filter::after {
+.portfolio__list ul .list__filter::after {
     position: absolute;
     content: "";
     width: 0%;
@@ -457,7 +457,7 @@ html {
     -moz-transition: all .3s ease 0s;
     -o-transition: all .3s ease 0s;
 }
-.portfolio__list ul .list__filter + .list__filter:hover::after {
+.portfolio__list ul .list__filter:hover::after {
     width: 25%;
 }
 .portfolio__list ul .list__filter.active {
@@ -465,7 +465,9 @@ html {
 }
 .portfolio__content {
     margin-top: 50px;
+    
 }
+
 .portfolio__content .row {
     position: relative;
 }
@@ -480,7 +482,6 @@ html {
 }
 .portfolio__single {
     border-radius: 5px;
-    
 }
 
 .portfolio__single .portfolio__img {
