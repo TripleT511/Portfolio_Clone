@@ -447,7 +447,7 @@ html {
 .portfolio__list ul .list__filter + .list__filter::after {
     position: absolute;
     content: "";
-    width: 0;
+    width: 0%;
     height: 1.5px;
     background: var(--primary-color);
     bottom: calc(0% + 15px);
@@ -473,9 +473,14 @@ html {
     position: absolute;
     left: 0%;
     top: 0;
+    transition: all .3s linear 0s;
+    -webkit-transition: all .3s linear 0s;
+    -moz-transition: all .3s linear 0s;
+    -o-transition: all .3s linear 0s;
 }
 .portfolio__single {
     border-radius: 5px;
+    
 }
 
 .portfolio__single .portfolio__img {
@@ -883,7 +888,8 @@ html {
 }
 .nutcuon .fa {
     font-size: 4.5rem;
-    color: #000;
+    color: var(--text-active);
+    
 }
 /* footer */
 .footer {
@@ -1162,6 +1168,10 @@ html {
     .col-sm-6 {
         flex: 0 0 100% !important;
         max-width: 100% !important;
+    }
+    .portfolio__list ul .list__filter + .list__filter::after {
+    bottom: calc(0% + 10px);
+    left: calc(0% + 10px);
     }
   
 }
