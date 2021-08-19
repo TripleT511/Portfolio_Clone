@@ -128,6 +128,10 @@ $('#slider').owlCarousel({
         }
     }
 })
+$(".owl-dot").on("click", function () {
+    $(".owl-dot").removeClass("active");
+    $(this).addClass("active");
+})
 $('#slider2').owlCarousel({
     loop: true,
     margin: 10,
