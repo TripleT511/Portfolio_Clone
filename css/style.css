@@ -1173,9 +1173,8 @@ html {
         flex: 0 0 100% !important;
         max-width: 100% !important;
     }
-    .portfolio__list ul .list__filter + .list__filter::after {
-    bottom: calc(0% + 10px);
-    left: calc(0% + 10px);
+    .portfolio__list ul .list__filter:hover::after {
+        width: 0;
     }
   
 }
