@@ -54,6 +54,7 @@ const navitempages = document.querySelector(".nav__item--pages");
 const pagesdk = document.querySelector(".list-dk-pages");
 navitemblog.addEventListener("mouseover", function () {
     blogdk.style.display = "block";
+    pagesdk.style.display = "none";
 })
 navitemblog.addEventListener("mouseleave", function () {
     setTimeout(() => {
@@ -62,6 +63,7 @@ navitemblog.addEventListener("mouseleave", function () {
 })
 navitempages.addEventListener("mouseover", function () {
     pagesdk.style.display = "block";
+    blogdk.style.display = "none";
 })
 navitempages.addEventListener("mouseleave", function () {
     setTimeout(() => {
