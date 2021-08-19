@@ -94,7 +94,15 @@ $(document).ready(function () {
     /* back to top */
     $(".lendautrang").on("click", function () {
         $("body,html").scrollTop(0, 400);
+    });
+    /* filter image */
+    $(".list__filter").on("click", function () {
+        $(".list__filter").removeClass("active");
+        $(this).addClass("active");
     })
+    var filter = $(".filtr-container").filterizr({
+
+    });
 })
 
 /* carousel */
@@ -138,27 +146,7 @@ $('#slider2').owlCarousel({
         }
     }
 })
-/* filer image */
-const portfolioList = document.querySelector(".portfolio__list"),
-    portfolioItems = document.querySelectorAll(".portfolio__item");
 
-portfolioList.addEventListener("click", function (e) {
-    if (e.target.classList.contains("list__filter") &&
-        !e.target.classList.contains("active")) {
-        portfolioList.querySelector(".active").classList.remove("active");
-        e.target.classList.add("active");
-        const newtarget = e.target.getAttribute("data-filter");
-        portfolioItems.forEach((Item) => {
-            if (newtarget === Item.getAttribute("data-category") || newtarget === "All") {
-                Item.classList.remove("hide");
-                Item.classList.add("show");
-            } else {
-                Item.classList.remove("show");
-                Item.classList.add("hide");
-            }
-        })
-    }
-})
 
 
 
