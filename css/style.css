@@ -460,6 +460,9 @@ html {
 .portfolio__list ul .list__filter:hover::after {
     width: 25%;
 }
+.portfolio__list ul .list__filter.active:hover::after {
+    width: 0%;
+}
 .portfolio__list ul .list__filter.active {
     color: var(--text-active);
 }
