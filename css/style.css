@@ -1160,7 +1160,9 @@ html {
     .price__item {
         margin: 10px 0;
     }
-
+    .portfolio__list ul .list__filter:hover::after {
+        width: 0;
+    }
 }
 @media screen and (max-width: 576px) {
     .nav .container {
@@ -1173,9 +1175,7 @@ html {
         flex: 0 0 100% !important;
         max-width: 100% !important;
     }
-    .portfolio__list ul .list__filter:hover::after {
-        width: 0;
-    }
+    
   
 }
 @media screen and (max-width: 375px) {
