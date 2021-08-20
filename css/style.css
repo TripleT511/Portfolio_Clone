@@ -184,6 +184,15 @@ html {
     display: none;
     z-index: 1;
 }
+.nav__menu-btn::after {
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    content: "";
+    background: transparent;
+    top: -10px;
+    left: 0;
+}
 .menu-btn-burger {
     width: 2.8rem;
     height: 3px;
