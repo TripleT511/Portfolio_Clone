@@ -469,6 +469,9 @@ html {
 .portfolio__list ul .list__filter:hover::after {
     width: 25%;
 }
+.portfolio__list ul .list__filter.active:hover::after {
+    width: 0%;
+}
 .portfolio__list ul .list__filter.active {
     color: var(--text-active);
 }
@@ -1169,7 +1172,10 @@ html {
     .portfolio__list ul .list__filter:hover::after {
         width: 0;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f83959bfe8ae90101685d5d16231227bc676fb3a
 }
 @media screen and (max-width: 576px) {
     .nav .container {
@@ -1182,7 +1188,10 @@ html {
         flex: 0 0 100% !important;
         max-width: 100% !important;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f83959bfe8ae90101685d5d16231227bc676fb3a
     
   
 }
