@@ -116,7 +116,7 @@ $('#slider').owlCarousel({
     nav: false,
     autoplay: true,
     autoplayTimeout: 2000,
-    autoplayHoverPause: false,
+    autoplayHoverPause: true,
     responsive: {
         0: {
             items: 1,
