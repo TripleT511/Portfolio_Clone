@@ -184,6 +184,15 @@ html {
     display: none;
     z-index: 1;
 }
+.nav__menu-btn::after {
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    content: "";
+    background: transparent;
+    top: -10px;
+    left: 0;
+}
 .menu-btn-burger {
     width: 2.8rem;
     height: 3px;
@@ -1157,6 +1166,9 @@ html {
     .price__item {
         margin: 10px 0;
     }
+    .portfolio__list ul .list__filter:hover::after {
+        width: 0;
+    }
 
 }
 @media screen and (max-width: 576px) {
@@ -1170,10 +1182,8 @@ html {
         flex: 0 0 100% !important;
         max-width: 100% !important;
     }
-    .portfolio__list ul .list__filter + .list__filter::after {
-    bottom: calc(0% + 10px);
-    left: calc(0% + 10px);
-    }
+
+    
   
 }
 @media screen and (max-width: 375px) {

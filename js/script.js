@@ -54,19 +54,18 @@ const navitempages = document.querySelector(".nav__item--pages");
 const pagesdk = document.querySelector(".list-dk-pages");
 navitemblog.addEventListener("mouseover", function () {
     blogdk.style.display = "block";
+    pagesdk.style.display = "none";
+
 })
 navitemblog.addEventListener("mouseleave", function () {
-    setTimeout(() => {
-        blogdk.style.display = "none";
-    }, 1000);
+    blogdk.style.display = "none";
 })
 navitempages.addEventListener("mouseover", function () {
     pagesdk.style.display = "block";
+    blogdk.style.display = "none";
 })
 navitempages.addEventListener("mouseleave", function () {
-    setTimeout(() => {
-        pagesdk.style.display = "none";
-    }, 1000);
+    pagesdk.style.display = "none";
 })
 
 
@@ -128,6 +127,9 @@ $('#slider').owlCarousel({
             nav: false
         }
     }
+})
+$(".owl-dot").on("click", function () {
+    $(".owl-dot").removeClass("active");
 })
 $('#slider2').owlCarousel({
     loop: true,
