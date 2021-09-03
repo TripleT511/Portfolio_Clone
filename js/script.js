@@ -15,25 +15,43 @@ overlay.addEventListener("click", function () {
 })
 /* add & remove class active */
 const activemenu = document.querySelectorAll(".nav__link");
-function linkActive() {
-    activemenu.forEach(n => n.classList.remove("active"));
-    this.classList.add("active");
-    menumobile.classList.remove("show");
-    overlay.classList.remove("show");
-    menuburger.classList.remove("open");
-}
-activemenu.forEach(n => n.addEventListener("click", linkActive));
-/* show ul__list menu */
+
 const blogshow = document.querySelector(".show-blog");
 const pageshow = document.querySelector(".show-pages");
 const list_blog = document.querySelector(".list-blogs");
 const list_pages = document.querySelector(".list-pages");
 const page2show = document.querySelector(".show-pages2");
 const list_pages2 = document.querySelector(".list-pages2");
+
+function linkActive() {
+    activemenu.forEach(n => n.classList.remove("active"));
+    this.classList.add("active");
+    menumobile.classList.remove("show");
+    overlay.classList.remove("show");
+    if (!overlay.classList.contains("show")) {
+        if (blogshow.classList.contains('fa-chevron-up')) {
+            blogshow.classList.add("fa-chevron-down");
+            blogshow.classList.remove("fa-chevron-up");
+            list_blog.classList.toggle("active");
+        }
+        if (pageshow.classList.contains('fa-chevron-up')) {
+            pageshow.classList.add("fa-chevron-down");
+            pageshow.classList.remove("fa-chevron-up");
+            list_pages.classList.toggle("active");
+        }
+        if (page2show.classList.contains('fa-chevron-up')) {
+            page2show.classList.add("fa-chevron-down");
+            page2show.classList.remove("fa-chevron-up");
+            list_pages2.classList.toggle("active");
+        }
+    }
+    menuburger.classList.remove("open");
+}
+activemenu.forEach(n => n.addEventListener("click", linkActive));
+/* show ul__list menu */
 blogshow.addEventListener("click", function () {
     blogshow.classList.toggle("fa-chevron-down");
     blogshow.classList.toggle("fa-chevron-up");
-
     list_blog.classList.toggle("active");
 })
 
