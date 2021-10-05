@@ -967,13 +967,14 @@ html {
     margin-bottom: 30px;
 }
 /* scrollbar */
-::-webkit-scrollbar {
+
+/* ::-webkit-scrollbar {
     width: 15px;
 }
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(#62bdfc 0%, #8490ff 100%);
     background: -webkit-linear-gradient(#62bdfc 0%, #8490ff 100%);
-}
+} */
 @media screen and (max-width: 991px) {
     .nav__menu-btn {
         display: block;
